@@ -10,7 +10,7 @@ import { Welcome } from '../pages/welcome/welcome';
 import { MiPerfilPage } from '../pages/mi-perfil/mi-perfil'; 
 import { AlimentosPage } from '../pages/alimentos/alimentos';
 import { SucursalesPage } from '../pages/sucursales/sucursales';
- 
+
 
 @Component({
   templateUrl: 'app.html'
@@ -36,14 +36,12 @@ export class MyApp {
 
   constructor(  platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public app: App, public splitPane: SplitPane, public menu: MenuController,public toastCtrl: ToastController, public jmyApis: jmyapis,public alertCtrl: AlertController,public jmyFatKit: jmyfatkit) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      statusBar.styleDefault();
+      statusBar.styleDefault(); 
       splashScreen.hide();
     });
      var data = JSON.parse(localStorage.getItem('userData'));
 
-     /* enlistarr los modulos disponibles den esta app */
+     /* enlistar los modulos disponibles en esta app para mostrar en el menú principal */
      this.pages = [{ 
         title: 'Inicio (Blog)', 
         component: Welcome, 

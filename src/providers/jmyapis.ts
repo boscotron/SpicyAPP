@@ -45,7 +45,7 @@ export class jmyapis {
                              "version":"1.0"
                            }  
  
-                         };
+                         }; 
   }
   /* NO EDITAR A PARTIR DE AQUI */
   /* funciones para alta, baja y cambios de registros por apis, empresas y permisos */

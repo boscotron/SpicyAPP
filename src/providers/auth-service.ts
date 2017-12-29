@@ -11,7 +11,7 @@ let apiUrl = 'https://comsis.mx/api/spicy/v1/';
   for more info on providers and Angular 2 DI.
 */
 @Injectable()
-export class AuthService {
+export class AuthService { 
 
   constructor(public http: Http) {
     //console.log('Hello AuthService Provider');

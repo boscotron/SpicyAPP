@@ -8,6 +8,7 @@ import { Common } from '../providers/common';
 
 import { jmyapis } from '../providers/jmyapis';
 import { JMYDB } from '../providers/jmydb';
+import { jmykeys } from '../providers/jmy-key';
 import { jmyfatkit } from '../providers/jmy-fat-kit';
 import { HttpModule } from "@angular/http";
 import { Welcome } from '../pages/welcome/welcome';
@@ -66,7 +67,7 @@ import {IonTagsInputModule} from "ionic-tags-input";
   ],
   providers: [
     StatusBar,
-    SplashScreen,AuthService,SplitPane,Common,jmyapis,JMYDB,jmyfatkit,
+    SplashScreen,AuthService,SplitPane,Common,jmyapis,JMYDB,jmyfatkit,jmykeys,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
